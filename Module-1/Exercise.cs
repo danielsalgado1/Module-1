@@ -23,5 +23,14 @@ namespace Module_1
         {
             return CalculateTotalReps() * WorkoutWeight;
         }
+
+        public void displayDetails()
+        {
+            Console.WriteLine($"Exercise: {ExerciseName}");
+            Console.WriteLine($"Muscle Groups: {string.Join(", ", MuscleGroups)}");
+            Console.WriteLine($"Sets: {WorkoutSets}");
+            Console.WriteLine($"Reps per Set: {WorkoutReps}");
+            Console.WriteLine($"Weight: {WorkoutWeight} lbs");
+        }
     }
 }
